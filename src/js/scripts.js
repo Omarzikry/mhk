@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // hero slider
   $(".hero-slider").slick({
     dots: true,
     infinite: true,
@@ -12,6 +13,8 @@ $(document).ready(function () {
     dotsClass: "hero-dots",
     pauseOnHover: false,
   });
+
+  // customer reviews slider
   $(".customer-slider").slick({
     infinite: true,
     speed: 700,
@@ -22,7 +25,7 @@ $(document).ready(function () {
     nextArrow:
       '<img src="./assets/imgs/right-chevron.svg" class="next-arrow" />',
   });
-
+  // toggle side menu
   $(".nav-toggle").click(function () {
     $(".nav").toggleClass("open");
     $(".nav-toggle").toggleClass("open");
